@@ -1,0 +1,52 @@
+/* Estilos de los productos */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start; /* Cambiado a "flex-start" para alinear los productos en la parte superior del contenedor */
+}
+
+.product-item {
+  width: 500px;
+  height: 500px; /* Establece una altura fija para todos los productos */
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-item:hover {
+  transform: scale(1.05);
+}
+
+.product-item img {
+  max-width: 100%;
+  max-height: 270px; /* Establece una altura fija para la imagen */
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.product-item h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.product-item .description {
+  margin-bottom: 10px;
+}
+
+.nomCat{
+  font-size:50px ;
+  text-align: center;
+}
+
+.discount {
+  color: red; /* Cambia el color del descuento a rojo */
+  font-weight: bold; /* Hace que el texto del descuento sea más destacado */
+  margin-left: 5px; /* Añade un margen a la izquierda del descuento para separarlo del precio */
+}
